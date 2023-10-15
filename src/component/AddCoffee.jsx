@@ -26,7 +26,7 @@ const AddCoffee = () => {
             if(data.insertedId){
                 Swal.fire({
                     title: 'Success!',
-                    text: 'User Added Successfully',
+                    text: 'Coffee Added Successfully',
                     icon: 'success',
                     confirmButtonText: 'Cool'
                   })
@@ -50,19 +50,19 @@ const AddCoffee = () => {
                     </div>
                     <div>
                         <label htmlFor="supplier" className="block mb-2 text-sm text-[#1B1A1ACC] font-semibold">Supplier</label>
-                        <input type="text" id="supplier" className="bg-white border border-gray-300 text-black-900 text-sm rounded-lg hover:ring-[#E3B577]  hover:border-[#E3B577] hover:shadow-lg hover:border-2 focus:ring-[#E3B577]  focus:border-[#E3B577] focus:shadow-lg focus:border-2  block w-full p-2.5 placeholder:text-[#1B1A1A99] focus:outline-none" placeholder="Enter coffee supplier" required />
+                        <input type="text" id="supplier" className="bg-white border border-gray-300 text-black-900 text-sm rounded-lg hover:ring-[#E3B577]  hover:border-[#E3B577] hover:shadow-lg hover:border-2 focus:ring-[#E3B577]  focus:border-[#E3B577] focus:shadow-lg focus:border-2  block w-full p-2.5 placeholder:text-[#1B1A1A99] focus:outline-none" placeholder="Enter coffee supplier" required defaultValue={"Cappu Authorizer"} />
                     </div>
                     <div>
                         <label htmlFor="taste" className="block mb-2 text-sm text-[#1B1A1ACC] font-semibold">Taste</label>
-                        <input type="text" id="taste" className="bg-white border border-gray-300 text-black-900 text-sm rounded-lg hover:ring-[#E3B577]  hover:border-[#E3B577] hover:shadow-lg hover:border-2 focus:ring-[#E3B577]  focus:border-[#E3B577] focus:shadow-lg focus:border-2  block w-full p-2.5 placeholder:text-[#1B1A1A99] focus:outline-none" placeholder="Enter coffee taste" required />
+                        <input type="text" id="taste" className="bg-white border border-gray-300 text-black-900 text-sm rounded-lg hover:ring-[#E3B577]  hover:border-[#E3B577] hover:shadow-lg hover:border-2 focus:ring-[#E3B577]  focus:border-[#E3B577] focus:shadow-lg focus:border-2  block w-full p-2.5 placeholder:text-[#1B1A1A99] focus:outline-none" placeholder="Enter coffee taste" defaultValue={"Sweet and hot" } required />
                     </div>
                     <div>
                         <label htmlFor="category" className="block mb-2 text-sm text-[#1B1A1ACC] font-semibold">Category</label>
-                        <input type="text" id="category" className="bg-white border border-gray-300 text-black-900 text-sm rounded-lg hover:ring-[#E3B577]  hover:border-[#E3B577] hover:shadow-lg hover:border-2 focus:ring-[#E3B577]  focus:border-[#E3B577] focus:shadow-lg focus:border-2  block w-full p-2.5 placeholder:text-[#1B1A1A99] focus:outline-none" placeholder="Enter coffee category" required />
+                        <input type="text" id="category" className="bg-white border border-gray-300 text-black-900 text-sm rounded-lg hover:ring-[#E3B577]  hover:border-[#E3B577] hover:shadow-lg hover:border-2 focus:ring-[#E3B577]  focus:border-[#E3B577] focus:shadow-lg focus:border-2  block w-full p-2.5 placeholder:text-[#1B1A1A99] focus:outline-none" placeholder="Enter coffee category" required defaultValue={"Americano"} />
                     </div>
                     <div>
                         <label htmlFor="details" className="block mb-2 text-sm text-[#1B1A1ACC] font-semibold">Details</label>
-                        <input type="text" id="details" className="bg-white border border-gray-300 text-black-900 text-sm rounded-lg hover:ring-[#E3B577]  hover:border-[#E3B577] hover:shadow-lg hover:border-2 focus:ring-[#E3B577]  focus:border-[#E3B577] focus:shadow-lg focus:border-2  block w-full p-2.5 placeholder:text-[#1B1A1A99] focus:outline-none" placeholder="Enter coffee details" required />
+                        <input type="text" id="details" className="bg-white border border-gray-300 text-black-900 text-sm rounded-lg hover:ring-[#E3B577]  hover:border-[#E3B577] hover:shadow-lg hover:border-2 focus:ring-[#E3B577]  focus:border-[#E3B577] focus:shadow-lg focus:border-2  block w-full p-2.5 placeholder:text-[#1B1A1A99] focus:outline-none" placeholder="Enter coffee details" required defaultValue={"Espresso with hot water"} />
                     </div>
                 </div>
                 <div className="mb-6">
