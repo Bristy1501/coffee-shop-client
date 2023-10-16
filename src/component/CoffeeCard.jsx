@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import Swal from 'sweetalert2';
 
 
-const CoffeeCard = ({ coffee }) => {
+const CoffeeCard = ({ coffee, coffees,setCoffees }) => {
     const { _id, name, chef, supplier, taste, category, details, photo } = coffee
     const handleDelete = (id) => {
         console.log(id)
@@ -22,7 +22,7 @@ const CoffeeCard = ({ coffee }) => {
         }).then((result) => {
             if (result.isConfirmed) {
 
-                fetch(`http://localhost:5000/coffee/${id}`, {
+                fetch(` https://coffee-store-server-99fwrlmdg-tamanna-zaman-bristys-projects.vercel.app/coffee/${id}`, {
                     method: 'Delete',
                     header: {
                         'Content-Type': 'application/json'
@@ -39,6 +39,8 @@ const CoffeeCard = ({ coffee }) => {
                                 'Your file has been deleted.',
                                 'success'
                             )
+                            const remaining =coffees.filter(coffee=>coffee._id!=id)
+                            setCoffees(remaining)
                         }
                     })
             }

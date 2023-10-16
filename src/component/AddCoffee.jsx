@@ -13,7 +13,7 @@ const AddCoffee = () => {
         const photo = form.photo.value;
         const newCoffee = { name, chef, supplier, taste, category, details, photo }
         console.log(newCoffee)
-        fetch('http://localhost:5000/coffee', {
+        fetch(' https://coffee-store-server-99fwrlmdg-tamanna-zaman-bristys-projects.vercel.app/coffee', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
