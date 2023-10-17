@@ -19,7 +19,7 @@ const router = createBrowserRouter([
             {
                 path: "/",
                 element: <App></App>,
-                loader: () => fetch('https://coffee-store-server-5ah3xlk1o-tamanna-zaman-bristys-projects.vercel.app/coffee')
+                loader: () => fetch('https://coffee-store-server-5b5tkll33-tamanna-zaman-bristys-projects.vercel.app')
             },
             {
                 path: "/addCoffee",
@@ -28,12 +28,12 @@ const router = createBrowserRouter([
             {
                 path: "/coffee/:id",
                 element: <ViewCoffee></ViewCoffee>,
-                loader: ({ params }) => fetch(` https://coffee-store-server-5ah3xlk1o-tamanna-zaman-bristys-projects.vercel.app/coffee/${params.id}`)
+                loader: ({ params }) => fetch(` https://coffee-store-server-5b5tkll33-tamanna-zaman-bristys-projects.vercel.app/coffee/${params.id}`)
             },
             {
                 path: "/updateCoffee/:id",
                 element: <UpdateCoffee></UpdateCoffee>,
-                loader: ({ params }) => fetch(` https://coffee-store-server-5ah3xlk1o-tamanna-zaman-bristys-projects.vercel.app/coffee/${params.id}`)
+                loader: ({ params }) => fetch(` https://coffee-store-server-5b5tkll33-tamanna-zaman-bristys-projects.vercel.app/coffee/${params.id}`)
 
             },
             {
@@ -49,7 +49,7 @@ const router = createBrowserRouter([
             {
                 path: "/user",
                 element: <Users></Users>,
-                loader: () => fetch(' https://coffee-store-server-5ah3xlk1o-tamanna-zaman-bristys-projects.vercel.app/user')
+                loader: () => fetch(' https://coffee-store-server-5b5tkll33-tamanna-zaman-bristys-projects.vercel.app/user')
 
             },
 
