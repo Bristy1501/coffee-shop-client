@@ -6,11 +6,10 @@ import { SiFacebook } from "react-icons/si";
 
 const Footer = () => {
     return (
-        <div className=" p-10 bg-base-200 text-base-content">
-
+        <div className="py-10 px-20 bg-base-200 text-base-content">
+            <div  className="max-w-5xl mx-auto flex flex-col ">
             <img className='w-16 mb-5' src="https://i.ibb.co/0jrdCnW/logo1.png" alt="" />
-            <footer className="grid grid-cols-2 mt-7">
-
+            <div className="grid grid-cols-2 mt-7 ">
                 <div>
                     <h1 className="mb-7 text-4xl font-bold text-[#331A15]">Espresso Emporium</h1>
                     <p className="mb-7">Always ready to be your friend. Come & Contact with us to share your memorable moments, to share with your best companion.</p>
@@ -34,7 +33,7 @@ const Footer = () => {
                 </div>
                 <div>
                     <section className='bg-[##F3F3F3] '>
-                        <div className="max-w-6xl mx-auto">
+                        <div className="">
                             <div className="flex flex-col items-center justify-center px-6  mx-auto  lg:py-0">
                                 <div className="w-full  rounded-lg  md:mt-0 sm:max-w-xl px-10  mb-4">
                                     <h1 className="mb-5 text-4xl font-bold text-[#331A15]">Connect with Us</h1>
@@ -61,7 +60,9 @@ const Footer = () => {
                     </section>
                 </div>
 
-            </footer>
+            </div>
+            </div>
+           
         </div>
 
     );

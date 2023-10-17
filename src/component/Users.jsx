@@ -25,8 +25,8 @@ const Users = () => {
             confirmButtonText: 'Yes, delete it!'
         }).then((result) => {
             if (result.isConfirmed) {
-console.log(` https://coffee-store-server-5ah3xlk1o-tamanna-zaman-bristys-projects.vercel.app/users/${id}`)
-                fetch(` https://coffee-store-server-5ah3xlk1o-tamanna-zaman-bristys-projects.vercel.app/users/${id}`, {
+console.log(` https://coffee-store-server-5b5tkll33-tamanna-zaman-bristys-projects.vercel.app/users/${id}`)
+                fetch(` https://coffee-store-server-5b5tkll33-tamanna-zaman-bristys-projects.vercel.app/users/${id}`, {
                     method: 'DELETE'
                 })
                     .then(res =>res.json())

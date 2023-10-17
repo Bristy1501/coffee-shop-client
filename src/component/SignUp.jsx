@@ -22,7 +22,7 @@ const SignUp = () => {
                 const creationTime=res.user.metadata.creationTime;
                 const user = { email,createdAt,creationTime};
                 console.log(res);
-                fetch(' https://coffee-store-server-5ah3xlk1o-tamanna-zaman-bristys-projects.vercel.app/user', {
+                fetch(' https://coffee-store-server-5b5tkll33-tamanna-zaman-bristys-projects.vercel.app/user', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
