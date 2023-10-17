@@ -22,7 +22,7 @@ const CoffeeCard = ({ coffee, coffees,setCoffees }) => {
         }).then((result) => {
             if (result.isConfirmed) {
 
-                fetch(` https://coffee-store-server-99fwrlmdg-tamanna-zaman-bristys-projects.vercel.app/coffee/${id}`, {
+                fetch(` https://coffee-store-server-5ah3xlk1o-tamanna-zaman-bristys-projects.vercel.app/coffee/${id}`, {
                     method: 'Delete',
                     header: {
                         'Content-Type': 'application/json'

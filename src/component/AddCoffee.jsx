@@ -1,4 +1,5 @@
-// https://ibb.co/sw4LWDn
+import { BsArrowLeftShort } from "react-icons/bs";
+import { Link } from "react-router-dom";
 import Swal from 'sweetalert2';
 const AddCoffee = () => {
     const handleAddCoffee = (e) => {
@@ -13,7 +14,7 @@ const AddCoffee = () => {
         const photo = form.photo.value;
         const newCoffee = { name, chef, supplier, taste, category, details, photo }
         console.log(newCoffee)
-        fetch(' https://coffee-store-server-99fwrlmdg-tamanna-zaman-bristys-projects.vercel.app/coffee', {
+        fetch(' https://coffee-store-server-5ah3xlk1o-tamanna-zaman-bristys-projects.vercel.app/coffee', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -34,7 +35,11 @@ const AddCoffee = () => {
         })
     }
     return (
-        <div className='bg-[#F4F3F0] rounded-md mx-44 py-10'>
+  <div className='bg-white'>
+     <div className='max-w-4xl mx-auto pt-10 '>
+      <Link to='/'> <button type="submit" className="flex items-center gap-2 justify-center text-[#374151] hover:bg-[#D2B48C]  bg-white focus:ring-4 focus:outline-none focus:ring-[#331A15] font-medium rounded-lg text-sm  px-5 py-2.5 text-center mb-10 "><BsArrowLeftShort></BsArrowLeftShort>Back to home</button></Link>
+         <div className='bg-[#F4F3F0] rounded-md py-10'>
+            
             <h2 className='text-center text-4xl text-[#374151] mb-6'>Add New Coffee</h2>
             <p className='text-center text-[14px] text-[#1B1A1AB2] px-28 mb-6'>It is a long established fact that a reader will be distraceted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here.</p>
 
@@ -77,6 +82,8 @@ const AddCoffee = () => {
 
 
         </div>
+   </div>
+  </div>
     );
 };
 
